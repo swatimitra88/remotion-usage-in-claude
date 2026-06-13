@@ -1,4 +1,5 @@
 # Session Backup — Remotion Project
+**GitHub:** https://github.com/swatimitra88/remotion-theo-through-time
 **Date:** 2026-06-13
 **Session:** 08_Youtube_US / New York City
 
