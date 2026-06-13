@@ -106,12 +106,50 @@ A photorealistic animated globe showing a flight route between any two cities in
 
 ---
 
+## ⚙️ Prerequisites — Install These First
+
+Before you clone this project, make sure the following are installed on your machine:
+
+| Tool | Version | Why you need it | Install |
+|---|---|---|---|
+| **Node.js** | v18 or higher | Runs the Remotion dev server and render pipeline | [nodejs.org](https://nodejs.org) |
+| **npm** | v9 or higher | Installs all project dependencies (comes with Node.js) | Included with Node |
+| **FFmpeg** | Any recent version | Encodes rendered frames into MP4/WebM/GIF | [ffmpeg.org](https://ffmpeg.org/download.html) |
+| **Git** | Any | Clone this repository | [git-scm.com](https://git-scm.com) |
+
+### Check if you already have them
+
+```bash
+node -v        # should print v18.x or higher
+npm -v         # should print v9.x or higher
+ffmpeg -version  # should print FFmpeg version info
+git --version  # should print git version info
+```
+
+> **Note:** FFmpeg is automatically bundled inside Remotion for rendering — but having it installed globally improves compatibility. If `npm run dev` works but `render` fails, install FFmpeg from [ffmpeg.org](https://ffmpeg.org/download.html).
+
+### What gets installed automatically via `npm install`
+
+All JavaScript/TypeScript dependencies are handled for you — no manual installs needed beyond the table above:
+
+| Package | Version | Purpose |
+|---|---|---|
+| `remotion` + `@remotion/cli` | 4.0.476 | Core video rendering framework |
+| `react` + `react-dom` | 19.x | Component rendering engine |
+| `d3-geo` | 3.x | Geographic projections for the globe |
+| `topojson-client` | 3.x | Converts world map data to GeoJSON |
+| `world-atlas` | 2.x | Real country boundary data (50m resolution) |
+| `typescript` | 5.9 | Type safety for all components |
+| `tailwindcss` | 4.x | Utility CSS (available for custom compositions) |
+
+---
+
 ## 🛠️ How to Use This
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/swatimitra88/remotion-theo-through-time.git
-cd remotion-theo-through-time
+git clone https://github.com/swatimitra88/remotion-usage-in-claude.git
+cd remotion-usage-in-claude
 npm install
 ```
 
